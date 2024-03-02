@@ -1,0 +1,8 @@
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+h3 {
+    padding-inline-start: 10%;
+}

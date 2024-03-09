@@ -1,21 +1,29 @@
 import "./Contestants.css";
 import Player from "./Player";
 
+
 const Contestants = () => {
+  
+
+  const ranking=[1,2,3,4,5,6,7,8,9,10]
   return (
     <div id="leaderboard">
-      <div className="ribbon"></div>
+ <tr className="info">
+      <td className="Rank_info">Rank</td>
+      <td className="name_info">Name</td>
+      <td className="points_info">Points</td>
+   
+    
+    </tr>
       <table>
-        <Player number={1} />
-        <Player number={2} />
-        <Player number={3} />
-        <Player number={4} />
-        <Player number={5} />
-        <Player number={6} />
-        <Player number={7} />
-        <Player number={8} />
-        <Player number={9} />
-        <Player number={10} />
+        {
+          ranking.map((user,index)=>(
+            <Player key={index} number={user} />
+
+          ))
+         
+
+        }
       </table>
     </div>
   );

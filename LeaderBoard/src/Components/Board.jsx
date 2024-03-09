@@ -4,6 +4,8 @@ import Contestants from './Contestants';
 const Board = () => {
     return (
         <>
+
+
             <Contestants />
         </>
     )

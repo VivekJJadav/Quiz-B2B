@@ -5,7 +5,9 @@ const Header = () => {
     return <header>
        <div className='container'>
         <div className='logo_wrapper'>
-            <img src={logo} className='appLogo'   alt="" />
+
+            <a href="https://bits-to-bytes.github.io/">  <img src={logo} className='appLogo'   alt="" /></a>
+          
         </div>
     <div className='wrapper'>    
         <img src={king} className='leaderboard_logo' alt="" />

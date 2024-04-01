@@ -1,8 +1,8 @@
-/* * {
-    font-size: 62, 5%;
+* {
     box-sizing: border-box;
     margin: 0;
-} */
+    padding: 0;
+}
 
 /* main {
     width: 40rem;
@@ -82,6 +82,7 @@ td {
         color: #141a39;
         cursor: default;
         position: relative;
+        top: 100px;
     }
 
     .number {
@@ -101,7 +102,7 @@ td {
         width: 18%;
     }
     .contact_info img {
-        width: 45%;
+        width: 60%;
     }
 }
 @media (min-width: 700px) {
@@ -189,12 +190,12 @@ td {
 
 @media (max-width: 500px) {
     * {
-        font-size: 55%;
+        font-size: 70%;
     }
 }
 
 @media (max-width: 390px) {
     * {
-        font-size: 75%;
+        font-size: 70%;
     }
 }

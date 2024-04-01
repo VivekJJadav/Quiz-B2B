@@ -4,7 +4,7 @@ header {
     padding: 20px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    position: sticky;
+    position: fixed;
     box-shadow: 1px 1px 22px #e1faff;
     top: 0;
     left: 0;

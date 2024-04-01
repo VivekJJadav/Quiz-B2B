@@ -1,10 +1,9 @@
 * {
-    font-size: 62, 5%;
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-main {
+/* main {
     width: 40rem;
     height: 43rem;
     background-color: #ffffff;
@@ -15,7 +14,7 @@ main {
     align-items: center;
     border-radius: 0.5rem;
     margin-top: 80px;
-}
+} */
 
 #header {
     width: 100%;
@@ -82,8 +81,9 @@ td {
         color: #141a39;
         cursor: default;
         position: relative;
-        top: 50px;
+        top: 100px;
     }
+
     .number {
         font-size: 2.2rem;
         font-weight: bold;
@@ -95,13 +95,14 @@ td {
         width: 19px;
     }
     .name {
-        width: 37%;
+        width: 27%;
+        font-size: 10px;
     }
     .points {
-        width: 18%;
+        width: 9%;
     }
     .contact_info img {
-        width: 45%;
+        width: 60%;
     }
 }
 @media (min-width: 700px) {
@@ -123,10 +124,9 @@ td {
     .number img {
         width: 50px;
     }
-}
-
-.name {
-    font-size: 1.2rem;
+    .name {
+        font-size: 1.2rem;
+    }
 }
 
 .points {
@@ -190,12 +190,12 @@ td {
 
 @media (max-width: 500px) {
     * {
-        font-size: 55%;
+        font-size: 70%;
     }
 }
 
 @media (max-width: 390px) {
     * {
-        font-size: 45%;
+        font-size: 70%;
     }
 }

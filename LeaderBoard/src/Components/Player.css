@@ -1,10 +1,10 @@
-* {
+/* * {
     font-size: 62, 5%;
     box-sizing: border-box;
     margin: 0;
-}
+} */
 
-main {
+/* main {
     width: 40rem;
     height: 43rem;
     background-color: #ffffff;
@@ -15,7 +15,7 @@ main {
     align-items: center;
     border-radius: 0.5rem;
     margin-top: 80px;
-}
+} */
 
 #header {
     width: 100%;
@@ -82,8 +82,8 @@ td {
         color: #141a39;
         cursor: default;
         position: relative;
-        top: 50px;
     }
+
     .number {
         font-size: 2.2rem;
         font-weight: bold;
@@ -112,7 +112,6 @@ td {
         color: #141a39;
         cursor: default;
         position: relative;
-        top: 100px;
     }
     .number {
         font-size: 2.2rem;
@@ -196,6 +195,6 @@ td {
 
 @media (max-width: 390px) {
     * {
-        font-size: 45%;
+        font-size: 75%;
     }
 }

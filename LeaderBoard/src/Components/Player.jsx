@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Player.css";
 import first from "../assets/first.png";
 import second from "../assets/second.png";
@@ -8,10 +8,15 @@ import instaimage from "../assets/insta.png";
 import leetcode from "../assets/leetcode.png";
 
 import PropTypes from "prop-types";
+import { Store } from "../store/store";
 
 const Player = ({ data }) => {
+    const store=Store()
     return (
-        <tr className="user">
+        <tr className="user" onClick={()=>{
+store.setselectedplayer(data);
+store.setisopen(true)
+        }}>
             <td className="number">
                 {data.position === 1 ? (
                     <img src={first} alt="" />
@@ -23,7 +28,7 @@ const Player = ({ data }) => {
                     data.position
                 )}
             </td>
-            <td className="name">{data.name}</td>
+            <td className="name poppins-bold">{data.name}</td>
             <td className="points">{data.points}</td>
             <td className="contact_info">
                 <a href={data.twitter}>
@@ -42,6 +47,15 @@ const Player = ({ data }) => {
 
 Player.propTypes = {
     data: PropTypes.object.isRequired,
+};
+
+Player.propTypes = {
+  username: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired,
+  rank: PropTypes.number.isRequired,
+  XLink: PropTypes.string,
+  instagramLink: PropTypes.string,
+  leetcodeLink: PropTypes.string,
 };
 
 export default Player;

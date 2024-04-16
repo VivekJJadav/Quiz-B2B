@@ -95,7 +95,7 @@ td {
         width: 19px;
     }
     .name {
-        width: 27%;
+        width: 57%;
         font-size: 10px;
     }
     .points {
@@ -103,6 +103,9 @@ td {
     }
     .contact_info img {
         width: 60%;
+    }
+    .contact_info {
+        display: none;
     }
 }
 @media (min-width: 700px) {
